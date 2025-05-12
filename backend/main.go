@@ -18,6 +18,6 @@ func main() {
 	http.HandleFunc("/hello", func(w http.ResponseWriter, r *http.Request) {
 		fmt.Fprintln(w, "Hello, World!")
 	})
-	log.Println("Server starting on port 8080...")
+	log.Println("Server is running on port 8080...")
 	log.Fatal(http.ListenAndServe(":8080", nil))
 }
